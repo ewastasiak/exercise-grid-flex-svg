@@ -1,0 +1,129 @@
+html,
+body {
+  height: 100%;
+}
+
+html {
+  background-color: #777;
+}
+
+body {
+  font: 1.3em "Rubik", sans-serif;
+  color: #333;
+}
+
+.container {
+  background-color: #333;
+  margin: 1em 3em;
+  padding: 2em;
+  width: auto;
+  min-width: 800px;
+  height: auto;
+  display: grid;
+  justify-content: center;
+  border-radius: 15px;
+}
+
+header {
+  color: white;
+}
+
+h1 {
+  margin: 10px;
+  text-align: center;
+}
+
+section {
+  display: inline-block;
+}
+
+svg {
+  stroke-width: 3px;
+  stroke: linen;
+}
+
+.row {
+  margin: 0;
+  display: flex;
+}
+
+.row-rel {
+  margin: 0;
+  position: relative;
+  display: flex;
+  width: 70%;
+  left: 290px;
+}
+
+.node {
+  align-self: center;
+  margin: 0 auto;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: lightgrey;
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  border: 3px solid linen;
+  box-shadow: 3px 3px #111;
+  /*   hover animation https://css-tricks.com/snippets/css/scale-on-hover-with-webkit-transition/ */
+  transition: all 0.2s ease-in-out;
+}
+
+.node:hover {
+  background-color: linen;
+  color: orange;
+  /*   hover animation */
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 700px) {
+  html {
+    background-color: #333;
+  }
+
+  header {
+    margin: 0;
+    padding: 10px;
+  }
+
+  h1 {
+    text-align: left;
+    font-size: 1em;
+  }
+  main {
+    width: 50%;
+  }
+
+  .container {
+    background-color: #333;
+    min-width: 400px;
+    width: auto;
+    height: auto;
+  }
+
+  svg {
+    width: 400px;
+    height: 75px;
+  }
+
+  .node {
+    font-size: 0.8em;
+    margin: 10px;
+    width: 75px;
+    height: 50px;
+  }
+
+  .row-rel {
+    left: 132px;
+  }
+
+  section {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

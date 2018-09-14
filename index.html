@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Exercise</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+</head>
+
+
+<body>
+
+  <header>
+    <h1>Grid + Flexbox + SVG Exercise</h1>
+  </header>
+
+
+  <main>
+
+    <div class="container">
+      <!-- row 1 -->
+      <section>
+        <div class="node">
+          <p>Web</p>
+          <p>1</p>
+        </div>
+      </section>
+
+      <!-- row 2 -->
+      <section>
+      <!-- vertical line -->
+          <svg viewbox="0 0 600 90" preserveAspectRatio="none" width="600" height="100">
+            <line x1="300" y1="0" x2="300" y2="90"/>
+          </svg>
+        <div class="node">
+          <p>Web Design</p>
+          <p>2</p>
+        </div>
+      </section>
+
+      <!-- row 3 fork 1 -->
+      <section>
+        <svg viewbox="0 0 600 100" preserveAspectRatio="none" width="600" height="100">
+        <!-- vertical line -->
+          <line x1="300" y1="0" x2="300" y2="50"/>
+          <!-- horizontal & fork line -->
+          <line x1="200" y1="50" x2="400" y2="50"/>
+          <line x1="200" y1="50" x2="200" y2="200"/>
+          <line x1="400" y1="50" x2="400" y2="200"/>
+        </svg>
+
+        <div class="row">
+          <div class="node">
+          <p>CSS</p>
+          <p>0</p>
+          </div>
+          <div class="node">
+          <p>HTML</p>
+          <p>2</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- row 4 fork 2 -->
+      <section>
+        <svg viewbox="0 0 600 100" preserveAspectRatio="none" width="600" height="100">
+        <!-- vertical line -->
+          <line x1="450" y1="0" x2="450" y2="50"/>
+          <!-- horizontal & fork line -->
+          <line x1="350" y1="50" x2="550" y2="50"/>
+          <line x1="350" y1="50" x2="350" y2="200"/>
+          <line x1="550" y1="50" x2="550" y2="200"/>
+        </svg>
+
+      <!-- row 4 fork 2 relative nodes-->
+      <div>
+
+      <div class="row-rel">
+
+        <div class="node">
+          <p>HTML</p>
+          <p>0</p>
+        </div>
+
+        <div class="node">
+          <p>XHTML</p>
+          <p>0</p>
+        </div>
+
+      </div>
+
+      </div>
+      </section>
+
+    </div>
+  </main>
+</body>
+
+</html>
